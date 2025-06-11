@@ -1,0 +1,13 @@
+name: acciones maquina de pruebas AWS
+on: 
+    workflow_dispatch: 
+jobs:  
+    ping_server:
+        runs-on: ubuntu-latest
+
+        steps: 
+            - name: 1er paso ping a maquina de pruebas AWS
+              run: | 
+                echo "haciendo ping ... "
+                ping 8.8.8.8
+                
